@@ -1,0 +1,9 @@
+# Build
+.svelte-kit/
+dist/
+
+# Node
+node_modules/
+
+# MacOS
+.DS_Store

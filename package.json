@@ -1,0 +1,30 @@
+{
+  "name": "the-cube",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "NPM_CHECK_INSTALLER=pnpm npm-check -u",
+    "sync": "svelte-kit sync",
+    "dev": "vite dev --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "run-s lint:*",
+    "lint:svelte": "svelte-check --tsconfig ./tsconfig.json",
+    "lint:eslint": "eslint --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@sveltejs/kit": "2.0.6",
+    "svelte": "4.2.8"
+  },
+  "devDependencies": {
+    "@in5net/prettier-config": "^1.1.0",
+    "@in5net/xo-config": "^1.5.0",
+    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "sass": "1.69.7",
+    "svelte-check": "3.6.2",
+    "typescript": "5.3.3",
+    "vite": "5.0.11",
+    "xo": "^0.56.0"
+  }
+}
